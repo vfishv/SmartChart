@@ -2,7 +2,7 @@ package com.bin.david.smartchart.adapter;
 
 import android.content.res.Resources;
 import android.graphics.DashPathEffect;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import com.bin.david.smartchart.R;
 import com.chad.library.adapter.base.BaseQuickAdapter;
@@ -16,7 +16,6 @@ import com.daivd.chart.data.ChartData;
 import com.daivd.chart.data.LineData;
 import com.daivd.chart.provider.component.cross.DoubleDriCross;
 import com.daivd.chart.provider.component.level.LevelLine;
-import com.daivd.chart.data.BarData;
 import com.daivd.chart.data.style.FontStyle;
 import com.daivd.chart.data.style.LineStyle;
 import com.daivd.chart.data.style.PointStyle;

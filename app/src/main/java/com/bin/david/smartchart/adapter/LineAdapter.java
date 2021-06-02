@@ -1,11 +1,9 @@
 package com.bin.david.smartchart.adapter;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import com.bin.david.smartchart.R;
 import com.bin.david.smartchart.bean.ChartStyle;
-import com.bin.david.smartchart.bean.MainItem;
-import com.bin.david.smartchart.bean.SelectItem;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 

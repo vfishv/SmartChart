@@ -3,7 +3,7 @@ package com.bin.david.smartchart;
 import android.content.res.Resources;
 import android.graphics.DashPathEffect;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.widget.Toast;
 
 import com.daivd.chart.component.axis.BaseAxis;
@@ -17,7 +17,6 @@ import com.daivd.chart.data.style.PointStyle;
 import com.daivd.chart.listener.OnClickColumnListener;
 import com.daivd.chart.provider.component.mark.BubbleMarkView;
 import com.daivd.chart.provider.component.point.LegendPoint;
-import com.daivd.chart.provider.component.point.Point;
 
 import java.util.ArrayList;
 import java.util.List;

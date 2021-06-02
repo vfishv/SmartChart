@@ -4,7 +4,7 @@ import android.content.res.Resources;
 import android.graphics.DashPathEffect;
 import android.graphics.PathEffect;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 
 import com.bin.david.smartchart.bean.ChartStyle;

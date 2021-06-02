@@ -1,7 +1,7 @@
 package com.bin.david.smartchart;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.bin.david.smartchart.helper.DrawHelper;
 import com.daivd.chart.core.LineChart;

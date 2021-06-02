@@ -2,7 +2,7 @@ package com.bin.david.smartchart;
 
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.daivd.chart.component.base.IComponent;
 import com.daivd.chart.core.RadarChart;
@@ -12,7 +12,6 @@ import com.daivd.chart.data.style.FontStyle;
 import com.daivd.chart.data.style.PointStyle;
 import com.daivd.chart.provider.component.mark.BubbleMarkView;
 import com.daivd.chart.provider.component.point.LegendPoint;
-import com.daivd.chart.provider.component.point.Point;
 
 import java.util.ArrayList;
 import java.util.List;

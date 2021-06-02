@@ -1,14 +1,13 @@
 package com.bin.david.smartchart;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 
 import com.bin.david.smartchart.adapter.ItemAdapter;
-import com.bin.david.smartchart.adapter.RotateChartListAdapter;
 import com.bin.david.smartchart.bean.MainItem;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 

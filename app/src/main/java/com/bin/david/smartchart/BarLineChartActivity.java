@@ -4,7 +4,7 @@ import android.content.res.Resources;
 import android.graphics.DashPathEffect;
 import android.graphics.PathEffect;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 
 import com.bin.david.smartchart.bean.ChartStyle;
@@ -24,7 +24,6 @@ import com.daivd.chart.provider.component.cross.DoubleDriCross;
 import com.daivd.chart.provider.component.level.LevelLine;
 import com.daivd.chart.provider.component.mark.BubbleMarkView;
 import com.daivd.chart.provider.component.point.LegendPoint;
-import com.daivd.chart.provider.component.point.Point;
 
 import java.util.ArrayList;
 import java.util.List;

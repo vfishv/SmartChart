@@ -1,7 +1,6 @@
 package com.bin.david.smartchart.adapter;
 
-import android.support.annotation.LayoutRes;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import com.bin.david.smartchart.R;
 import com.bin.david.smartchart.bean.MainItem;

@@ -1,7 +1,7 @@
 package com.bin.david.smartchart.adapter;
 
 import android.content.res.Resources;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import com.bin.david.smartchart.R;
 import com.chad.library.adapter.base.BaseQuickAdapter;
@@ -14,7 +14,6 @@ import com.daivd.chart.data.style.FontStyle;
 import com.daivd.chart.data.style.PointStyle;
 import com.daivd.chart.provider.component.mark.BubbleMarkView;
 import com.daivd.chart.provider.component.point.LegendPoint;
-import com.daivd.chart.provider.component.point.Point;
 
 import java.util.ArrayList;
 import java.util.List;
