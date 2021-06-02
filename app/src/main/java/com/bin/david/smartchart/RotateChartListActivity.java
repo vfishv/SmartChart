@@ -29,7 +29,7 @@ public class RotateChartListActivity extends AppCompatActivity {
         }
         itemAdapter = new RotateChartListAdapter(items);
         recyclerView.setAdapter(itemAdapter);
-        itemAdapter.openLoadAnimation();
+//        itemAdapter.openLoadAnimation();
 
     }
 }

@@ -5,7 +5,7 @@ import androidx.annotation.Nullable;
 import com.bin.david.smartchart.R;
 import com.bin.david.smartchart.bean.ChartStyle;
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.chad.library.adapter.base.BaseViewHolder;
+import com.chad.library.adapter.base.viewholder.BaseViewHolder;
 
 import java.util.List;
 
@@ -13,7 +13,7 @@ import java.util.List;
  * Created by huang on 2017/10/13.
  */
 
-public class LineAdapter extends BaseQuickAdapter<ChartStyle,BaseViewHolder> {
+public class LineAdapter extends BaseQuickAdapter<ChartStyle, BaseViewHolder> {
 
 
     public LineAdapter(@Nullable List<ChartStyle> data) {

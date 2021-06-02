@@ -10,6 +10,7 @@ import android.view.View;
 import com.bin.david.smartchart.adapter.ItemAdapter;
 import com.bin.david.smartchart.bean.MainItem;
 import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.chad.library.adapter.base.listener.OnItemClickListener;
 
 import java.util.ArrayList;
 
@@ -40,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
         items.add(new MainItem(RotateChartListActivity.class,"rotate chart List(Solving gesture conflict)"));
         itemAdapter = new ItemAdapter(items);
         recyclerView.setAdapter(itemAdapter);
-        itemAdapter.openLoadAnimation();
-        itemAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
+//        itemAdapter.openLoadAnimation();
+        itemAdapter.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
                MainItem mainItem = (MainItem) adapter.getData().get(position);

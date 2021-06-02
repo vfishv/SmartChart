@@ -29,7 +29,7 @@ public class ZoomChartListActivity extends AppCompatActivity {
         }
         itemAdapter = new ZoomChartListAdapter(items);
         recyclerView.setAdapter(itemAdapter);
-        itemAdapter.openLoadAnimation();
+//        itemAdapter.openLoadAnimation();
 
     }
 }

@@ -10,7 +10,8 @@ import android.widget.TextView;
 
 import com.bin.david.smartchart.R;
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.chad.library.adapter.base.BaseViewHolder;
+import com.chad.library.adapter.base.listener.OnItemClickListener;
+import com.chad.library.adapter.base.viewholder.BaseViewHolder;
 import com.daivd.chart.utils.DensityUtils;
 
 import java.util.List;
@@ -23,7 +24,7 @@ public class BaseCheckDialog<T> {
 
     private View popView;
     private BaseDialog dialog;
-    private BaseQuickAdapter<T,BaseViewHolder> quickAdapter;
+    private BaseQuickAdapter<T, BaseViewHolder> quickAdapter;
     private int selectPosition =-1;
     private OnCheckChangeListener<T> listener;
     private String title;
@@ -70,7 +71,7 @@ public class BaseCheckDialog<T> {
                 }
             };
             recyclerView.setAdapter(quickAdapter);
-            quickAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
+            quickAdapter.setOnItemClickListener(new OnItemClickListener() {
                 @Override
                 public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
                     selectPosition = position;

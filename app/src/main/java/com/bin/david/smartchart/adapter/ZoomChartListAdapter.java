@@ -6,7 +6,7 @@ import androidx.annotation.Nullable;
 
 import com.bin.david.smartchart.R;
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.chad.library.adapter.base.BaseViewHolder;
+import com.chad.library.adapter.base.viewholder.BaseViewHolder;
 import com.daivd.chart.component.axis.HorizontalAxis;
 import com.daivd.chart.component.base.IAxis;
 import com.daivd.chart.component.axis.VerticalAxis;
@@ -30,7 +30,7 @@ import java.util.List;
  * Created by huang on 2017/10/13.
  */
 
-public class ZoomChartListAdapter extends BaseQuickAdapter<String,BaseViewHolder> {
+public class ZoomChartListAdapter extends BaseQuickAdapter<String, BaseViewHolder> {
 
     
 
@@ -42,8 +42,8 @@ public class ZoomChartListAdapter extends BaseQuickAdapter<String,BaseViewHolder
     protected void convert(BaseViewHolder helper, String item) {
        LineChart lineChart =  helper.getView(R.id.lineChart);
         lineChart.setLineModel(LineChart.CURVE_MODEL);
-        Resources res = mContext.getResources();
-        FontStyle.setDefaultTextSpSize(mContext,12);
+        Resources res = getContext().getResources();
+        FontStyle.setDefaultTextSpSize(getContext(),12);
         List<String> chartYDataList = new ArrayList<>();
         chartYDataList.add("Tokyo");
         chartYDataList.add("Paris");
@@ -81,13 +81,13 @@ public class ZoomChartListAdapter extends BaseQuickAdapter<String,BaseViewHolder
         horizontalAxis.setAxisDirection(IAxis.AxisDirection.BOTTOM);
         horizontalAxis.setDrawGrid(true);
         //设置线条样式
-        verticalAxis.getAxisStyle().setWidth(mContext,1);
+        verticalAxis.getAxisStyle().setWidth(getContext(),1);
         DashPathEffect effects = new DashPathEffect(new float[] { 1, 2, 4, 8}, 1);
-        verticalAxis.getGridStyle().setWidth(mContext,1).setColor(res.getColor(R.color.arc_text)).setEffect(effects);
-        horizontalAxis.getGridStyle().setWidth(mContext,1).setColor(res.getColor(R.color.arc_text)).setEffect(effects);
+        verticalAxis.getGridStyle().setWidth(getContext(),1).setColor(res.getColor(R.color.arc_text)).setEffect(effects);
+        horizontalAxis.getGridStyle().setWidth(getContext(),1).setColor(res.getColor(R.color.arc_text)).setEffect(effects);
       DoubleDriCross cross = new DoubleDriCross();
       LineStyle crossStyle = cross.getCrossStyle();
-      crossStyle.setWidth(mContext,1);
+      crossStyle.setWidth(getContext(),1);
       crossStyle.setColor(res.getColor(R.color.arc21));
       lineChart.getProvider().setCross(cross);
         lineChart.setZoom(true);
@@ -96,7 +96,7 @@ public class ZoomChartListAdapter extends BaseQuickAdapter<String,BaseViewHolder
         //开启MarkView
         lineChart.getProvider().setOpenMark(true);
         //设置MarkView
-        lineChart.getProvider().setMarkView(new BubbleMarkView(mContext));
+        lineChart.getProvider().setMarkView(new BubbleMarkView(getContext()));
         //设置显示点
         Point point = new Point();
         point.getPointStyle().setShape(PointStyle.CIRCLE);
@@ -112,10 +112,10 @@ public class ZoomChartListAdapter extends BaseQuickAdapter<String,BaseViewHolder
         //设置标题样式
         FontStyle fontStyle = lineChart.getChartTitle().getFontStyle();
         fontStyle.setTextColor(res.getColor(R.color.arc_temp));
-        fontStyle.setTextSpSize(mContext,15);
+        fontStyle.setTextSpSize(getContext(),15);
         LevelLine levelLine = new LevelLine(20);
         DashPathEffect effects2 = new DashPathEffect(new float[] { 1, 2,2,4}, 1);
-        levelLine.getLineStyle().setWidth(mContext,1).setColor(res.getColor(R.color.arc23)).setEffect(effects);
+        levelLine.getLineStyle().setWidth(getContext(),1).setColor(res.getColor(R.color.arc23)).setEffect(effects);
         levelLine.getLineStyle().setEffect(effects2);
         lineChart.getProvider().addLevelLine(levelLine);
         lineChart.getLegend().setDirection(IComponent.BOTTOM);

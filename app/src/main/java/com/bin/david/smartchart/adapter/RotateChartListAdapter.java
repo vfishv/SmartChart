@@ -5,7 +5,7 @@ import androidx.annotation.Nullable;
 
 import com.bin.david.smartchart.R;
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.chad.library.adapter.base.BaseViewHolder;
+import com.chad.library.adapter.base.viewholder.BaseViewHolder;
 import com.daivd.chart.component.base.IComponent;
 import com.daivd.chart.core.PieChart;
 import com.daivd.chart.data.ChartData;
@@ -22,7 +22,7 @@ import java.util.List;
  * Created by huang on 2017/10/13.
  */
 
-public class RotateChartListAdapter extends BaseQuickAdapter<String,BaseViewHolder> {
+public class RotateChartListAdapter extends BaseQuickAdapter<String, BaseViewHolder> {
 
     
 
@@ -33,8 +33,8 @@ public class RotateChartListAdapter extends BaseQuickAdapter<String,BaseViewHold
     @Override
     protected void convert(BaseViewHolder helper, String item) {
       PieChart pieChart =  helper.getView(R.id.pieChart);
-      Resources res = mContext.getResources();
-      FontStyle.setDefaultTextSpSize(mContext,12);
+      Resources res = getContext().getResources();
+      FontStyle.setDefaultTextSpSize(getContext(),12);
       List<String> chartYDataList = new ArrayList<>();
       chartYDataList.add("Tokyo");
       chartYDataList.add("Paris");
@@ -58,9 +58,9 @@ public class RotateChartListAdapter extends BaseQuickAdapter<String,BaseViewHold
       //设置标题样式
       FontStyle fontStyle = pieChart.getChartTitle().getFontStyle();
       fontStyle.setTextColor(res.getColor(R.color.arc3));
-      fontStyle.setTextSpSize(mContext,15);
+      fontStyle.setTextSpSize(getContext(),15);
       pieChart.getProvider().setOpenMark(true);
-      pieChart.getProvider().setMarkView(new BubbleMarkView(mContext));
+      pieChart.getProvider().setMarkView(new BubbleMarkView(getContext()));
       LegendPoint legendPoint = (LegendPoint) pieChart.getLegend().getPoint();
       PointStyle style = legendPoint.getPointStyle();
       style.setShape(PointStyle.CIRCLE);
